@@ -1,0 +1,4 @@
+@import "tailwindcss";
+/* Add this to index.css */
+@import "swiper/css";
+@import "swiper/css/autoplay";
