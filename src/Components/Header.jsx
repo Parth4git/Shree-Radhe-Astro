@@ -25,13 +25,21 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-12 pr-96 text-gray-50 font-serif text-lg">
+        <nav className="hidden md:flex space-x-10 pr-44 text-gray-50 font-serif text-lg">
           {navLinks.map((link) => (
             <a key={link.name} href={link.href} className="hover:text-cyan-50">
               {link.name}
             </a>
           ))}
         </nav>
+
+        {/* Contact Button */}
+        <a
+          href="tel:+919727689606"
+          className="hidden md:block bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded"
+        >
+          Contact Us
+        </a>
 
         {/* Mobile Menu Icon */}
         <button

@@ -90,7 +90,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center text-sm text-white mt-10 border-t-2 pt-4 border-white">
         {" "}
-        Copyright © 2024 Astrologer Janak Ojha. All Rights Reserved.
+        Copyright © 2025 Shree Radhe Astro. All Rights Reserved.
       </div>
     </footer>
   );
