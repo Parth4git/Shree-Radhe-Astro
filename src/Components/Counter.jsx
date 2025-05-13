@@ -55,20 +55,21 @@ const Count = ({ value, label, suffix = "" }) => {
 
 const Counter = () => {
   return (
-    <div>
-      <section className="bg-purple-700 py-16">
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
-          {counters.map((item, idx) => (
-            <Count
-              key={idx}
-              value={item.value}
-              label={item.label}
-              suffix={item.suffix || ""}
-            />
-          ))}
-        </div>
-      </section>
-    </div>
+    <section className="bg-purple-700 py-12 items-center flex flex-col justify-center ">
+      <h2 className="text-5xl font-semibold text-white text-center mb-12">
+        Our Success Stories
+      </h2>
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
+        {counters.map((item, idx) => (
+          <Count
+            key={idx}
+            value={item.value}
+            label={item.label}
+            suffix={item.suffix || ""}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 

@@ -1,14 +1,15 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
-    <section className="bg-gray-50 py-12">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+    <section className="bg-gray-50 py-20">
+      <div className="max-w-8xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         {/* Form Section */}
 
         {/* Text Section */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+          <h2 className="text-5xl font-bold text-gray-800 mb-4">Contact Us</h2>
           <p className="text-gray-600 text-lg mb-4">
             We believe astrology is pure science, and we aim to create such a
             social impact of the organization on you that science and astrology
@@ -22,6 +23,26 @@ const ContactUs = () => {
             He is helping people to solve their life problems related to
             government jobs, health, marriage, love, career, and business
           </p>
+          <div className="mt-4 flex  gap-4">
+            <div className="mt-4">
+              <div className="flex items-center gap-2">
+                <FaCheckCircle className="text-purple-500" />
+                <p className="text-xl font-bold">24 X 7 Support</p>
+              </div>
+              <p className="font-serif">
+                We Provide 24*7 Real Time Support For Our Customers
+              </p>
+            </div>
+            <div className="mt-4">
+              <div className="flex items-center gap-2">
+                <FaCheckCircle className="text-purple-500" />
+                <p className="text-xl font-bold">Online Booking</p>
+              </div>
+              <p className="font-serif">
+                You can book all types of puja services online.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="w-full md:w-1/2">
           <form className="bg-white shadow-lg rounded-lg p-6">

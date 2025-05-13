@@ -24,8 +24,9 @@ function App() {
         title="Want to know about horoscope ?"
         description="We provide you correct and accurate horoscope."
       />
-      <Testimonial />
       <VideoSection />
+      <Testimonial />
+
       <ContactUs />
       <Footer />
     </>

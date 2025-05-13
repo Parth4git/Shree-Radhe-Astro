@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
 
-const slides = ["/image1.jpeg"];
+const slides = ["/image1.jpeg", "/cover2.jpeg", "/cover3.jpeg"];
 
 const Hero = () => {
   return (
@@ -37,9 +37,10 @@ const Hero = () => {
           className="text-center text-white px-4"
         >
           <h1 className="text-2xl md:text-4xl font-bold mb-4">
-            Nayan Joshi- The most TRUSTED name in the field of Astrology
+            <span className="text-amber-200"> Nayan Joshi</span>- The most
+            TRUSTED name in the field of Astrology
           </h1>
-          <p className="text-lg md:text-xl max-w-xl mx-auto">
+          <p className="text-lg md:text-xl max-w-xl mx-auto font-light mb-6">
             a Vedic astrologer for all human problems and solutions-Famous for
             Marriage, career, business, past life readings and child astrology.
           </p>

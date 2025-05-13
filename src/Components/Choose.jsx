@@ -3,7 +3,7 @@ import React from "react";
 const Choose = () => {
   return (
     <div>
-      <section className="bg-gray-50 py-12">
+      <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
           {/* Image Section */}
           <div className="w-full md:w-1/2">
@@ -31,11 +31,14 @@ const Choose = () => {
             </p>
             <p className="text-gray-600 text-lg">
               He is helping people to solve their life problems related to
-              government jobs, health, marriage, love, career, and business. As
-              we dive into our 50th year, we strive to build a community where
-              we are a part of your daily routine right from our astrology by
-              date of birth, name, time, palm reading, and face reading, to all
-              other online astrology, numerology, palmistry services.
+              <span className="font-bold text-amber-400">
+                {" "}
+                government jobs, health, marriage, love, career, and business.{" "}
+              </span>
+              As we strive to build a community where we are a part of your
+              daily routine right from our astrology by date of birth, name,
+              time, palm reading, and face reading, to all other online
+              astrology, numerology, palmistry services.
             </p>
             <button className="mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-4 px-6 rounded">
               Book a Consultation

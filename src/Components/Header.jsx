@@ -13,7 +13,7 @@ const Header = () => {
   ];
 
   return (
-    <header className=" mx-auto bg-purple-600 shadow-md sticky top-0 z-50">
+    <header className=" mx-auto bg-purple-700 shadow-md sticky top-0 z-50">
       <div className="max-w-8xl mx-auto px-6 py-2 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -22,10 +22,14 @@ const Header = () => {
             alt="Company Logo"
             className="h-14 w-16 border-rounded"
           />
+          <div className="block">
+            <h1 className="text-2xl font-bold text-gray-50">Astrologer</h1>
+            <p className="text-lg font-bold text-gray-50">Nayan Joshi</p>
+          </div>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-10 pr-44 text-gray-50 font-serif text-lg">
+        <nav className="hidden md:flex space-x-8 pr-32 text-gray-50 font-serif text-lg">
           {navLinks.map((link) => (
             <a key={link.name} href={link.href} className="hover:text-cyan-50">
               {link.name}
