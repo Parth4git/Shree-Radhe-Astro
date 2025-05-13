@@ -26,7 +26,7 @@ const ContactUs = () => {
           <div className="mt-4 flex  gap-4">
             <div className="mt-4">
               <div className="flex items-center gap-2">
-                <FaCheckCircle className="text-purple-500" />
+                <FaCheckCircle className="text-amber-400" />
                 <p className="text-xl font-bold">24 X 7 Support</p>
               </div>
               <p className="font-serif">
@@ -35,7 +35,7 @@ const ContactUs = () => {
             </div>
             <div className="mt-4">
               <div className="flex items-center gap-2">
-                <FaCheckCircle className="text-purple-500" />
+                <FaCheckCircle className="text-amber-400" />
                 <p className="text-xl font-bold">Online Booking</p>
               </div>
               <p className="font-serif">
@@ -86,7 +86,7 @@ const ContactUs = () => {
             </div>
             <button
               type="submit"
-              className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded"
+              className="bg-amber-400 hover:bg-amber-500 text-white font-bold py-2 px-4 rounded"
             >
               Submit
             </button>

@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import Counter from "./Components/Counter";
 import Choose from "./Components/Choose";
 import Filler from "./Components/Filler";
+import Gallery from "./Components/Gallery";
 import VideoSection from "./Components/VideoSection";
 
 function App() {
@@ -19,15 +20,16 @@ function App() {
       <AboutUs />
       <Counter />
       <Choose />
+      <Testimonial />
       <Services />
       <Filler
         title="Want to know about horoscope ?"
         description="We provide you correct and accurate horoscope."
       />
-      <VideoSection />
-      <Testimonial />
-
+      {/* <VideoSection /> */}
+      <Gallery />
       <ContactUs />
+
       <Footer />
     </>
   );

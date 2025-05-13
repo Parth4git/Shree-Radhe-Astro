@@ -40,7 +40,7 @@ const Choose = () => {
               time, palm reading, and face reading, to all other online
               astrology, numerology, palmistry services.
             </p>
-            <button className="mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-4 px-6 rounded">
+            <button className="mt-4 bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-6 rounded">
               Book a Consultation
             </button>
           </div>

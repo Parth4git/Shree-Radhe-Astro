@@ -5,7 +5,7 @@ const AboutUs = () => {
     <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         {/* Image Section */}
-        <div className="w-full md:w-1/3">
+        <div className="w-full md:w-2/5">
           <img
             src="/image3-removebg-preview.png" // Replace with your image path
             alt="About Us"
@@ -14,8 +14,10 @@ const AboutUs = () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-full md:w-2/3">
-          <h2 className="text-5xl font-bold text-gray-800 mb-4">About Us</h2>
+        <div className="w-full md:w-3/5">
+          <h2 className="text-5xl font-bold text-gray-800 mb-4">
+            About Dr. Nayan Joshi
+          </h2>
           <p className="text-gray-600 text-lg mb-4">
             We believe astrology is pure science, and we aim to create such a
             social impact of the organization on you that{" "}
@@ -39,7 +41,7 @@ const AboutUs = () => {
             birth, name, time, palm reading, and face reading, to all other
             online astrology, numerology, palmistry services.
           </p>
-          <button className="mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-4 px-6 rounded">
+          <button className="mt-4 bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-6 rounded">
             Get a Free Consultation on Call
           </button>
         </div>

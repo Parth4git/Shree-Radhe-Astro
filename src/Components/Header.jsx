@@ -40,7 +40,7 @@ const Header = () => {
         {/* Contact Button */}
         <a
           href="tel:+919727689606"
-          className="hidden md:block bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded"
+          className="hidden md:block bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded"
         >
           Contact Us
         </a>
