@@ -1,23 +1,59 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+const testimonials = [
+  {
+    text: "Best Astrologer & Vastu Tips Hanuman Ji Yagna",
+    author: "Shree Ram Bhata",
+    image: "/image2.jpeg",
+  },
+  {
+    text: "Best. Jo bhi kaha hai muje bilkul vaisa hi hua hai",
+    author: "Parul Thakkar",
+    image: "/image2.jpeg",
+  },
+  {
+    text: "Best astrologer, best vastu tips, best Bhudev",
+    author: "Sumit Gupta",
+    image: "/image2.jpeg",
+  },
+];
 
 const Testimonial = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const { text, author, image } = testimonials[currentIndex];
+
   return (
     <section className="bg-gray-50 py-12">
-      {/* Testimonial Section */}
-      <h1 className="text-3xl font-bold mb-4 text-center">Testimonial</h1>
-      <div className="max-w-8xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <h2 className="text-xl font-bold mb-2">Testimonial 1</h2>
-            <p className="text-gray-600">This is a testimonial description.</p>
-          </div>
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <h2 className="text-xl font-bold mb-2">Testimonial 2</h2>
-            <p className="text-gray-600">This is a testimonial description.</p>
-          </div>
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <h2 className="text-xl font-bold mb-2">Testimonial 3</h2>
-            <p className="text-gray-600">This is a testimonial description.</p>
+      <h1 className="text-3xl font-bold mb-4 text-center">
+        What People Say About Us
+      </h1>
+      <p className="text-gray-600 text-lg mb-10 text-center px-4 md:px-0">
+        We believe astrology is pure science, and we aim to create such a social
+        impact of the organization on you that science and astrology through its
+        resources of the astrology chart, kundali, etc.
+      </p>
+
+      <div className="max-w-2xl mx-auto px-6 transition duration-500 ease-in-out">
+        <div className="bg-white flex items-center shadow-lg rounded-lg p-6">
+          <img
+            src={image}
+            alt="Testimonial"
+            className="rounded-full shadow-md w-16 h-16 object-cover"
+          />
+          <div className="ml-6">
+            <h2 className="text-lg font-semibold mb-1 italic">"{text}"</h2>
+            <p className="text-gray-600 font-medium mt-2">— {author}</p>
           </div>
         </div>
       </div>

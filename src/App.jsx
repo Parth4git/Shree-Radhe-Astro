@@ -7,6 +7,8 @@ import Testimonial from "./Components/Testimonial";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import Counter from "./Components/Counter";
+import Choose from "./Components/Choose";
+import Filler from "./Components/Filler";
 
 function App() {
   return (
@@ -15,7 +17,12 @@ function App() {
       <Hero />
       <AboutUs />
       <Counter />
+      <Choose />
       <Services />
+      <Filler
+        title="Want to know about horoscope ?"
+        description="We provide you correct and accurate horoscope."
+      />
       <Testimonial />
       <ContactUs />
       <Footer />
