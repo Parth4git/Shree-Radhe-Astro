@@ -13,7 +13,7 @@ const Header = () => {
   ];
 
   return (
-    <header className=" mx-auto bg-violet-700 shadow-md sticky top-0 z-50">
+    <header className=" mx-auto bg-purple-600 shadow-md sticky top-0 z-50">
       <div className="max-w-8xl mx-auto px-6 py-2 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -53,7 +53,7 @@ const Header = () => {
 
       {/* Mobile Nav Dropdown */}
       {isOpen && (
-        <nav className="md:hidden bg-black px-4 pb-4 space-y-2 text-gray-50 font-medium">
+        <nav className="md:hidden bg-purple-600 px-4 pb-4 space-y-2 text-gray-50 font-medium">
           {navLinks.map((link) => (
             <a
               key={link.name}

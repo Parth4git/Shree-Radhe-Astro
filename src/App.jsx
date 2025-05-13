@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import Counter from "./Components/Counter";
 import Choose from "./Components/Choose";
 import Filler from "./Components/Filler";
+import VideoSection from "./Components/VideoSection";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         description="We provide you correct and accurate horoscope."
       />
       <Testimonial />
+      <VideoSection />
       <ContactUs />
       <Footer />
     </>

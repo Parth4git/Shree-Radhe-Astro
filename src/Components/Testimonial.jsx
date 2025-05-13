@@ -34,7 +34,7 @@ const Testimonial = () => {
   const { text, author, image } = testimonials[currentIndex];
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="max-w-5xl mx-auto bg-white py-12 h-96 flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold mb-4 text-center">
         What People Say About Us
       </h1>
@@ -44,16 +44,18 @@ const Testimonial = () => {
         resources of the astrology chart, kundali, etc.
       </p>
 
-      <div className="max-w-2xl mx-auto px-6 transition duration-500 ease-in-out">
+      <div className="max-w-4xl mx-auto px-6 transition duration-500 ease-in-out">
         <div className="bg-white flex items-center shadow-lg rounded-lg p-6">
           <img
             src={image}
             alt="Testimonial"
-            className="rounded-full shadow-md w-16 h-16 object-cover"
+            className="rounded-full shadow-md w-18 h-18 object-cover"
           />
           <div className="ml-6">
-            <h2 className="text-lg font-semibold mb-1 italic">"{text}"</h2>
-            <p className="text-gray-600 font-medium mt-2">— {author}</p>
+            <h2 className="text-xl font-semibold mb-1 italic">"{text}"</h2>
+            <p className="text-gray-600 font-medium mt-2 bottom-0 right-0">
+              — {author}
+            </p>
           </div>
         </div>
       </div>

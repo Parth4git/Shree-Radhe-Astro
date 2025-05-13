@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 
 const counters = [
-  { value: 200_000, label: "Kundli Served" },
+  { value: 2000, label: "Kundli Served" },
   { value: 20, label: "Year's Of Legacy", suffix: "+" },
 
-  { value: 100_000, label: "Consultations Given", suffix: "k+" },
+  { value: 100_00, label: "Consultations Given", suffix: "k+" },
   { value: 20, label: "Awards in the field of Occult", suffix: "+" },
 ];
 
 const Count = ({ value, label, suffix = "" }) => {
   const [count, setCount] = useState(0);
-  const duration = 2000; // ms
+  const duration = 4000; // ms
 
   useEffect(() => {
     let start = 0;
@@ -44,7 +44,7 @@ const Count = ({ value, label, suffix = "" }) => {
         className="text-4xl font-bold text-white"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1, delay: 0.5 }}
       >
         {formatCount()}
       </motion.h3>
