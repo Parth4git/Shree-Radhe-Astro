@@ -188,7 +188,7 @@ const Services = () => {
         </div> */}
       </div>
       <div className="flex justify-center mt-16">
-        <button className="bg-amber-400 hover:bg-amber-500 text-white font-bold py-2 px-4 rounded">
+        <button className="bg-purple-700 hover:scale-110  text-white text-xl font-bold py-4 px-8 rounded">
           See All Services
         </button>
       </div>
