@@ -23,7 +23,7 @@ const Header = () => {
             className="h-14 w-16 border-rounded"
           />
           <div className="block">
-            <h1 className="text-2xl font-bold text-gray-50">Astrologer</h1>
+            <h1 className="text-xl font-bold text-gray-50">Astrologer</h1>
             <p className="text-lg font-bold text-gray-50">Nayan Joshi</p>
           </div>
         </div>
