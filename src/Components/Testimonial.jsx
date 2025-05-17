@@ -28,7 +28,7 @@ const testimonials = [
   },
 ];
 
-const Testimonial = () => {
+const Testimonial = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
@@ -59,12 +59,14 @@ const Testimonial = () => {
   }, [currentIndex, isAutoPlaying]);
 
   return (
-    <section className="bg-gray-800 py-12 px-4">
+    <section className={`${props.bgColor} py-12 px-4`}>
       <div className="max-w-5xl mx-auto text-center mb-12">
-        <h1 className="text-3xl md:text-4xl text-white font-semibold mb-4">
+        <h1
+          className={`text-3xl md:text-4xl ${props.textColor} font-semibold mb-4`}
+        >
           What People Say About Us
         </h1>
-        <p className="text-amber-200 text-md md:text-lg font-serif">
+        <p className={`${props.pColor} text-md md:text-lg font-serif`}>
           We believe astrology is a pure science, and our aim is to create a
           social impact that blends science and astrology through tools like
           kundali and astrology charts.

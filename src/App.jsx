@@ -1,36 +1,22 @@
-import Header from "./Components/Header";
-import Hero from "./Components/Hero";
 import "./App.css";
-import AboutUs from "./Components/AboutUs";
-import Services from "./Components/Services";
-import Testimonial from "./Components/Testimonial";
-import ContactUs from "./Components/ContactUs";
-import Footer from "./Components/Footer";
-import Counter from "./Components/Counter";
-import Choose from "./Components/Choose";
-import Filler from "./Components/Filler";
-import Gallery from "./Components/Gallery";
-import VideoSection from "./Components/VideoSection";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import ServicesPage from "./Pages/ServicesPage";
+import TestimonialPage from "./Pages/TestimonialPage";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <AboutUs />
-      <Choose />
-      <Counter />
-      <Testimonial />
-      <Services />
-      <Filler
-        title="Want to know about horoscope ?"
-        description="We provide you correct and accurate horoscope."
-      />
-      {/* <VideoSection /> */}
-      <Gallery />
-      <ContactUs />
-
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/testimonials" element={<TestimonialPage />} />
+      </Routes>
     </>
   );
 }

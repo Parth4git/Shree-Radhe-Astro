@@ -28,19 +28,19 @@ const Footer = () => {
               href="https://www.youtube.com/@ShreRadheAstroDrNayanjoshi24"
               target="_blank"
             >
-              <FaYoutube className="text-3xl text-white mb-2" />
+              <FaYoutube className="text-3xl text-white mb-2 hover:text-yellow-300" />
             </a>
             <a href="https://www.instagram.com/nayanjoshi54/#" target="_blank">
-              <FaInstagram className="text-3xl text-white mb-2" />
+              <FaInstagram className="text-3xl text-white mb-2 hover:text-yellow-300" />
             </a>
             <a
               href="https://www.facebook.com/nayan.joshi.33865854"
               target="_blank"
             >
-              <FaFacebook className="text-3xl text-white mb-2" />
+              <FaFacebook className="text-3xl text-white mb-2 hover:text-yellow-300" />
             </a>
             <a href="https://g.co/kgs/9STF3rA" target="_blank">
-              <FaGoogle className="text-3xl text-white mb-2" />
+              <FaGoogle className="text-3xl text-white mb-2 hover:text-yellow-300" />
             </a>
           </div>
         </div>
@@ -52,22 +52,31 @@ const Footer = () => {
           </h3>
           <ul className="space-y-1">
             <li>
-              <a href="#home" className="hover:text-white">
+              <a href="/" className="hover:text-yellow-200 hover:underline">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:text-white">
+              <a
+                href="/about"
+                className="hover:text-yellow-200 hover:underline"
+              >
                 About Us
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-white">
+              <a
+                href="/services"
+                className="hover:text-yellow-200 hover:underline"
+              >
                 Our Services
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-white">
+              <a
+                href="/contact"
+                className="hover:text-yellow-200 hover:underline"
+              >
                 Contact Us
               </a>
             </li>
@@ -81,15 +90,15 @@ const Footer = () => {
           </h3>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
-              <FaMapMarkerAlt className="text-white" />
+              <FaMapMarkerAlt className="text-white hover:text-yellow-300" />
               Viramgam Gujrat
             </li>
             <li className="flex items-center gap-2">
-              <FaPhone className="text-white" />
+              <FaPhone className="text-white hover:text-yellow-300" />
               +91-9727689606
             </li>
             <li className="flex items-center gap-2">
-              <FaEnvelope className="text-white" />
+              <FaEnvelope className="text-white hover:text-yellow-300" />
               nayanjoshi240@gmail.com
             </li>
           </ul>
@@ -99,7 +108,14 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center text-sm text-white mt-10 border-t-1 pt-4 border-white">
         {" "}
-        Copyright © 2025 Shree Radhe Astro. All Rights Reserved.
+        Copyright © 2025 Shree Radhe Astro. All Rights Reserved. Created by{" "}
+        <a
+          href="https://www.quartztechnologies.in/"
+          target="_blank"
+          className="text-yellow-200 hover:text-yellow-500"
+        >
+          Quartz Technologies
+        </a>
       </div>
     </footer>
   );

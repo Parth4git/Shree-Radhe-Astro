@@ -9,7 +9,7 @@ const Header = () => {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Testimonials", href: "/testimonials" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -31,7 +31,11 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 pr-32 text-gray-50 font-serif text-lg">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="hover:text-cyan-50">
+            <a
+              key={link.name}
+              href={link.href}
+              className="hover:text-yellow-300"
+            >
               {link.name}
             </a>
           ))}
@@ -42,7 +46,7 @@ const Header = () => {
           href="tel:+919727689606"
           className="hidden md:block bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded"
         >
-          Contact Us
+          Call Us
         </a>
 
         {/* Mobile Menu Icon */}
