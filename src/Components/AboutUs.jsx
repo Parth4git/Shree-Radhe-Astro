@@ -36,7 +36,7 @@ const AboutUs = () => {
           <p className="text-gray-600 text-lg mt-6">
             He is helping people to solve their life problems related to
             government jobs, health, marriage, love, career, and business. As we
-            dive into our 50th year, we strive to build a community where we are
+            dive into our 20th year, we strive to build a community where we are
             a part of your daily routine right from our astrology by date of
             birth, name, time, palm reading, and face reading, to all other
             online astrology, numerology, palmistry services.
@@ -48,7 +48,7 @@ const AboutUs = () => {
             }}
           >
             <span className="text-2xl">📞 </span>
-            Get a Free Consultation on Call
+            Get a Consultation on Call
           </button>
         </div>
       </div>
