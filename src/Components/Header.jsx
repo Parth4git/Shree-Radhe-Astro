@@ -59,6 +59,17 @@ const Header = () => {
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
+      <marquee
+        className="bg-gray-800 text-yellow-200 py-2 text-center font-serif"
+        behavior="scroll"
+        direction="left"
+      >
+        <p>
+          Welcome to the world of astrology! Discover your future with
+          personalized readings and insights. Call us at +91 9727689606 for
+          expert guidance.
+        </p>
+      </marquee>
 
       {/* Mobile Nav Dropdown */}
       {isOpen && (

@@ -108,7 +108,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center text-sm text-white mt-10 border-t-1 pt-4 border-white">
         {" "}
-        Copyright © 2025 Shree Radhe Astro. All Rights Reserved. Created by{" "}
+        Copyright © 2025 Shree Radhe Astro. All Rights Reserved. Created by pd
         <a
           href="https://www.quartztechnologies.in/"
           target="_blank"

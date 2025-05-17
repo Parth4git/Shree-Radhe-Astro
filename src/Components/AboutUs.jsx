@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="bg-white py-12">
+    <section className="bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         {/* Image Section */}
         <div className="w-full md:w-2/5">
