@@ -10,6 +10,7 @@ import {
   FaGoogle,
 } from "react-icons/fa";
 import { FaF } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -52,33 +53,34 @@ const Footer = () => {
           </h3>
           <ul className="space-y-1">
             <li>
-              <a href="/" className="hover:text-yellow-200 hover:underline">
+              <Link to="/" className="hover:text-yellow-200 hover:underline">
                 Home
-              </a>
+              </Link>
+              S
             </li>
             <li>
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="hover:text-yellow-200 hover:underline"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/services"
+              <Link
+                to="/services"
                 className="hover:text-yellow-200 hover:underline"
               >
                 Our Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/contact"
                 className="hover:text-yellow-200 hover:underline"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -91,7 +93,7 @@ const Footer = () => {
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-white hover:text-yellow-300" />
-              Viramgam Gujrat
+              Viramgam ,Ahmedabad, Gujarat
             </li>
             <li className="flex items-center gap-2">
               <FaPhone className="text-white hover:text-yellow-300" />
@@ -108,12 +110,13 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center text-sm text-white mt-10 border-t-1 pt-4 border-white">
         {" "}
-        Copyright © 2025 Shree Radhe Astro. All Rights Reserved. Created by pd
+        Copyright © 2025 Shree Radhe Astro. All Rights Reserved. Powered by
         <a
           href="https://www.quartztechnologies.in/"
           target="_blank"
           className="text-yellow-200 hover:text-yellow-500"
         >
+          {" "}
           Quartz Technologies
         </a>
       </div>
