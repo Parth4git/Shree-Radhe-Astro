@@ -112,7 +112,7 @@ const Footer = () => {
         {" "}
         Copyright © 2025 Shree Radhe Astro. All Rights Reserved. Powered by
         <a
-          href="https://www.quartztechnologies.in/"
+          href="https://quartztechindia.com/"
           target="_blank"
           className="text-yellow-200 hover:text-yellow-500"
         >
