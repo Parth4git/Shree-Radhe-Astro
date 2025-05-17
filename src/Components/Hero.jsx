@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
   {
@@ -22,6 +23,7 @@ const slides = [
 ];
 
 const Hero = () => {
+  const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -56,7 +58,12 @@ const Hero = () => {
             <button className="bg-yellow-400 hover:bg-yellow-600 text-black font-semibold py-2 px-6 rounded shadow">
               Get Started
             </button>
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-6 rounded">
+            <button
+              className="bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-6 rounded"
+              onClick={() => {
+                navigate("/services");
+              }}
+            >
               Learn More
             </button>
           </div>

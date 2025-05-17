@@ -1,8 +1,11 @@
 import React from "react";
 import serviceData from "../assets/data";
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Services = (props) => {
+  const navigate = useNavigate();
   return (
     <div className="max-w-8xl mx-auto px-6 py-12 bg-gray-100">
       <h1 className="text-5xl font-semibold mb-4 text-center">Our Services</h1>
@@ -20,7 +23,12 @@ const Services = (props) => {
             />
             <h2 className="text-xl font-bold mb-2">{service.title}</h2>
             <p className="text-gray-700 mb-8">{service.description}</p>
-            <button className="asolute bottom-4 right-4 bg-amber-400 hover:bg-amber-500 text-white font-bold py-2 px-4 rounded">
+            <button
+              className="asolute bottom-4 right-4 bg-amber-400 hover:bg-amber-500 text-white font-bold py-2 px-4 rounded"
+              onClick={() => {
+                navigate("/contact");
+              }}
+            >
               Book a Consultation
             </button>
           </div>
@@ -29,12 +37,12 @@ const Services = (props) => {
 
       {props.show && (
         <div className="flex items-center justify-center gap-2 mt-16">
-          <a
-            href="/services"
+          <Link
+            to="/services"
             className="text-gray-700 text-2xl font-bold hover:underline"
           >
             See All Services
-          </a>
+          </Link>
           <FaArrowRight size={24} className="text-gray-800" />
         </div>
       )}

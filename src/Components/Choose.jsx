@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Choose = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <section className="bg-gray-50 py-12">
@@ -31,7 +33,12 @@ const Choose = () => {
               time, palm reading, and face reading, to all other online
               astrology, numerology, palmistry services.
             </p>
-            <button className="mt-4 bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-6 rounded">
+            <button
+              className="mt-4 bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-6 rounded"
+              onClick={() => {
+                navigate("/contact");
+              }}
+            >
               Book a Consultation
             </button>
           </div>

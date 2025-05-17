@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom"; // 👈 Add this import
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Header = () => {
   ];
 
   return (
-    <header className=" mx-auto bg-gray-900 shadow-md sticky top-0 z-50">
+    <header className="mx-auto bg-gray-900 shadow-md sticky top-0 z-50">
       <div className="max-w-8xl mx-auto px-6 py-2 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -31,13 +32,13 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 pr-32 text-gray-50 font-serif text-lg">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="hover:text-yellow-300"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -63,14 +64,14 @@ const Header = () => {
       {isOpen && (
         <nav className="md:hidden bg-purple-600 px-4 pb-4 space-y-2 text-gray-50 font-medium">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className="block hover:text-cyan-50"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </nav>
       )}

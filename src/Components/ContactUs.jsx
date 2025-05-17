@@ -33,13 +33,26 @@ const ContactUs = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <button className="flex-1 bg-gray-700 hover:bg-amber-500 text-white font-bold py-3 px-4 rounded flex items-center justify-center gap-2 text-sm sm:text-base md:mt-5">
+            <button
+              className="flex-1 bg-gray-700 hover:bg-gray-800 hover:text-amber-300 text-white font-bold py-3 px-4 rounded flex items-center justify-center gap-2 text-sm sm:text-base md:mt-5"
+              onClick={() => {
+                window.open("tel:+919825555555", "_blank");
+              }}
+            >
               <FaMobile className="text-amber-400" />
               Call Us for Free Consultation
             </button>
 
-            <button className="flex-1 bg-gray-700 hover:bg-amber-500 text-white font-bold py-3 px-4 rounded flex items-center justify-center gap-2 text-sm sm:text-base md:mt-5">
-              <FaWhatsapp className="text-amber-400" />
+            <button
+              className="flex-1 bg-gray-700 hover:bg-gray-800 hover:text-green-400 text-white font-bold py-3 px-4 rounded flex items-center justify-center gap-2 text-sm sm:text-base md:mt-5"
+              onClick={() => {
+                window.open(
+                  "https://api.whatsapp.com/send?phone=919825555555",
+                  "_blank"
+                );
+              }}
+            >
+              <FaWhatsapp className="text-amber-400 hover:text-green-400" />
               WhatsApp us to Book
             </button>
           </div>

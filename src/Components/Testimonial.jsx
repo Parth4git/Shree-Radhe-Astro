@@ -4,27 +4,32 @@ const testimonials = [
   {
     text: "Best Astrologer & Vastu Tips Hanuman Ji Yagna is best. I am very happy with the service.",
     author: "Shree Ram Bhata",
-    image: "/image2.jpeg",
+    image:
+      "https://images.unsplash.com/photo-1659528403950-659feec1ac8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uJTIwaW5kaWFufGVufDB8fDB8fHww",
   },
   {
     text: "Best. Jo bhi kaha hai muje bilkul vaisa hi hua hai. Thank you so much guruji 🙏🏻🙏🏻🙏🏻",
     author: "Parul Thakkar",
-    image: "/image2.jpeg",
+    image:
+      "https://plus.unsplash.com/premium_photo-1661964274927-84559011dd89?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29uJTIwaW5kaWFufGVufDB8fDB8fHww",
   },
   {
     text: "Best astrologer, best vastu tips, best Bhudev Yagna, best Hanuman Ji Yagna.",
     author: "Sumit Gupta",
-    image: "/image2.jpeg",
+    image:
+      "https://images.unsplash.com/photo-1655047134643-8a5dd0b0e6ed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbiUyMGluZGlhbnxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     text: "Best astrologer I ever met. He has great knowledge about astrology and remedies. ",
     author: "Ankit Sharma",
-    image: "/image2.jpeg",
+    image:
+      "https://plus.unsplash.com/premium_photo-1722682239201-21c8173e776b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uJTIwaW5kaWFufGVufDB8fDB8fHww",
   },
   {
     text: "He is very knowledgeable, his predictions are very accurate, remedies are easy and effective.",
     author: "Anjali Verma",
-    image: "/image2.jpeg",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723568666044-1b066e26b1fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbiUyMGluZGlhbnxlbnwwfHwwfHx8MA%3D%3D",
   },
 ];
 
