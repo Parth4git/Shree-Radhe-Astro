@@ -56,7 +56,6 @@ const Footer = () => {
               <Link to="/" className="hover:text-yellow-200 hover:underline">
                 Home
               </Link>
-              S
             </li>
             <li>
               <Link
@@ -76,7 +75,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/contact"
+                to="/contact"
                 className="hover:text-yellow-200 hover:underline"
               >
                 Contact Us
