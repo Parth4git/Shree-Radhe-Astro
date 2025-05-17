@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 const counters = [
   { value: 2000, label: "Kundli Served" },
@@ -48,14 +48,16 @@ const Count = ({ value, label, suffix = "" }) => {
       >
         {formatCount()}
       </motion.h3>
-      <p className="text-gray-50 mt-2 text-lg max-w-xs mx-auto">{label}</p>
+      <p className="text-yellow-300 mt-2 text-lg max-w-xs mx-auto font-serif">
+        {label}
+      </p>
     </div>
   );
 };
 
 const Counter = () => {
   return (
-    <section className="bg-purple-700 py-12 items-center flex flex-col justify-center ">
+    <section className="bg-gray-800 py-10 items-center flex flex-col justify-center ">
       <h2 className="text-5xl font-semibold text-white text-center mb-12">
         Our Success Stories
       </h2>

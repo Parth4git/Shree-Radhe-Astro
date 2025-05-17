@@ -13,7 +13,7 @@ import { FaF } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-700 text-white pt-12 pb-4 px-4 border-t-2 border-white">
+    <footer className="bg-gray-800 text-white pt-12 pb-4 px-4 border-t-2 border-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Call to Action */}
         <div className=" md:col-span-2">

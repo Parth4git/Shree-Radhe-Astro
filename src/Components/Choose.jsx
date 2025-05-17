@@ -3,20 +3,11 @@ import React from "react";
 const Choose = () => {
   return (
     <div>
-      <section className="bg-white py-12">
+      <section className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
-          {/* Image Section */}
-          <div className="w-full md:w-1/2">
-            <img
-              src="/image1.jpeg" // Replace with your image path
-              alt="Choose Us"
-              className="rounded-2xl shadow-lg object-cover w-full h-full"
-            />
-          </div>
-
           {/* Text Section */}
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            <h2 className="text-4xl font-semibold text-gray-800 mb-4">
               Why Choose Dr. Nayan Joshi ?
             </h2>
             <p className="text-gray-600 text-lg mb-4">
@@ -43,6 +34,14 @@ const Choose = () => {
             <button className="mt-4 bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-6 rounded">
               Book a Consultation
             </button>
+          </div>
+          {/* Image Section */}
+          <div className="w-full md:w-1/2">
+            <img
+              src="/image1.jpeg" // Replace with your image path
+              alt="Choose Us"
+              className="rounded-2xl shadow-lg shadow-amber-300 object-cover w-full h-full"
+            />
           </div>
         </div>
       </section>

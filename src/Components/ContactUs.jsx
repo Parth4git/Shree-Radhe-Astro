@@ -4,7 +4,7 @@ import { FaCheckCircle, FaMobile, FaWhatsapp } from "react-icons/fa";
 const ContactUs = () => {
   return (
     <section className="bg-gray-50 py-16 px-4">
-      <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-10 text-center">
+      <h2 className="text-3xl md:text-5xl font-semibold text-gray-800 mb-10 text-center">
         Contact Us
       </h2>
 
@@ -33,12 +33,12 @@ const ContactUs = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <button className="flex-1 bg-purple-700 hover:bg-amber-500 text-white font-bold py-3 px-4 rounded flex items-center justify-center gap-2 text-sm sm:text-base md:mt-5">
+            <button className="flex-1 bg-gray-700 hover:bg-amber-500 text-white font-bold py-3 px-4 rounded flex items-center justify-center gap-2 text-sm sm:text-base md:mt-5">
               <FaMobile className="text-amber-400" />
               Call Us for Free Consultation
             </button>
 
-            <button className="flex-1 bg-purple-700 hover:bg-amber-500 text-white font-bold py-3 px-4 rounded flex items-center justify-center gap-2 text-sm sm:text-base md:mt-5">
+            <button className="flex-1 bg-gray-700 hover:bg-amber-500 text-white font-bold py-3 px-4 rounded flex items-center justify-center gap-2 text-sm sm:text-base md:mt-5">
               <FaWhatsapp className="text-amber-400" />
               WhatsApp us to Book
             </button>
@@ -47,7 +47,7 @@ const ContactUs = () => {
 
         {/* Form Section */}
         <div className="w-full md:w-1/2">
-          <form className="bg-white shadow-lg rounded-lg p-6 space-y-5">
+          <form className="bg-white shadow-md shadow-amber-300 rounded-lg p-6 space-y-5">
             <div>
               <label
                 htmlFor="name"

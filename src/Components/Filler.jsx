@@ -2,7 +2,7 @@ import React from "react";
 
 const Filler = (props) => {
   return (
-    <section className="bg-purple-700 py-12 items-center flex flex-col justify-center">
+    <section className="bg-gray-800 py-12 items-center flex flex-col justify-center">
       <h3 className="text-3xl font-bold text-center text-white mb-4">
         {props.title}
       </h3>

@@ -15,7 +15,7 @@ const AboutUs = () => {
 
         {/* Text Section */}
         <div className="w-full md:w-3/5">
-          <h2 className="text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-5xl font-semibold text-gray-800 mb-4">
             About Dr. Nayan Joshi
           </h2>
           <p className="text-gray-600 text-lg mb-4">
