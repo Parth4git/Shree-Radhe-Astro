@@ -43,7 +43,7 @@ const Services = (props) => {
           >
             See All Services
           </Link>
-          <FaArrowRight size={24} className="text-gray-800" />
+          <FaArrowRight size={24} className="text-gray-800 " />
         </div>
       )}
     </div>
