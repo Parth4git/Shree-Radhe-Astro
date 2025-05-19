@@ -9,7 +9,7 @@ const AboutUs = () => {
           <img
             src="/Untitled design (1).png" // Replace with your image path
             alt="About Us"
-            className="rounded-4xl  w-full h-[400px] md:h-[500px] lg:h-[700px] object-cover "
+            className="rounded-4xl  w-full h-[560px] md:h-[500px] lg:h-[700px] object-cover "
           />
         </div>
 
