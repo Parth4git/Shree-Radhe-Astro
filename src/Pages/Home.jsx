@@ -26,7 +26,7 @@ const Home = () => {
       />
       <Services show={true} value={6} />
       <Filler
-        title="Want to know about horoscope ?"
+        title="Want to know about Horoscope and Astrology of your loved one ?"
         description="We provide you correct and accurate horoscope."
       />
       {/* <VideoSection /> */}
