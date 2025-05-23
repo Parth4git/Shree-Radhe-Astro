@@ -1,77 +1,110 @@
  const serviceData = [
   {
- title:"Kundli Match Making",
+ titleEn:"Kundli Match Making",
+ titleHi:"कुंडली मिलान",
  image:"https://weddingbyte.com/new/images/kundalbr.png",
- description:"Kundli Match Making is a traditional practice in Hindu astrology that involves comparing the birth charts of two individuals to assess their compatibility for marriage. It considers planetary positions, doshas, and other astrological factors to determine if the couple is well-suited for each other."
+ descriptionEn:"Kundli Match Making is a traditional practice in Hindu astrology that involves comparing the birth charts of two individuals to assess their compatibility for marriage. It considers planetary positions, doshas, and other astrological factors to determine if the couple is well-suited for each other.",
+descriptionHi:"कुंडली मिलान एक पारंपरिक प्रथा है जिसमें दो व्यक्तियों की जन्म कुंडलियों की तुलना की जाती है ताकि यह आंका जा सके कि वे विवाह के लिए कितने अनुकूल हैं। यह ग्रहों की स्थिति, दोषों और अन्य ज्योतिषीय कारकों पर विचार करता है।",
   },
   {
-    title:"Nakshatra Pooja",
+    titleEn:"Nakshatra Pooja",
+    titleHi:"नक्षत्र पूजा",
     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Vp10GcDoLlBI0-53wHK7Gw4JYbDBDpL2vA&s",
-    description:
+    descriptionEn:
       "Nakshatra Pooja is a Hindu ritual performed to honor the lunar mansions (nakshatras) in Vedic astrology. It is believed to enhance positive energies and mitigate negative influences associated with one's birth star.",
-
+    descriptionHi:
+      "नक्षत्र पूजा एक हिंदू अनुष्ठान है जो वेदिक ज्योतिष में चंद्रमा के निवास स्थानों (नक्षत्रों) का सम्मान करने के लिए किया जाता है। यह किसी के जन्म तारे से जुड़े नकारात्मक प्रभावों को कम करने और सकारात्मक ऊर्जा को बढ़ाने में मदद करता है।",
   },
   {
-   title:"Ratna",
+   titleEn:"Ratna",
+    titleHi:"रत्न",
    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkzS2-c7Qb98bZOVzLrT3p294M_9dOPvIMWA&s",
-    description:
+    descriptionEn:
       "Ratna refers to gemstones in Vedic astrology. Each gemstone is associated with a specific planet and is believed to possess unique energies that can influence an individual's life positively when worn.",
+    descriptionHi:
+      "रत्न वेदिक ज्योतिष में रत्नों को संदर्भित करता है। प्रत्येक रत्न एक विशेष ग्रह से जुड़ा होता है और माना जाता है कि जब इसे पहना जाता है तो यह किसी व्यक्ति के जीवन पर सकारात्मक प्रभाव डालने वाली अद्वितीय ऊर्जा रखता है।",
   },
   {
-   title:"Pitra Dosh Pooja",
+   titleEn:"Pitra Dosh Pooja",
+    titleHi:"पितृ दोष पूजा",
     image:"https://www.omkarmic.in/wp-content/uploads/2020/11/pitra-dosha-puja.jpg",
-    description:
+    descriptionEn:
       "Pitra Dosh Pooja is a ritual performed to appease ancestral spirits and resolve issues related to Pitra Dosh, which is believed to arise from unresolved ancestral karma. It aims to bring peace and blessings from ancestors.",
+    descriptionHi:
+      "पितृ दोष पूजा एक अनुष्ठान है जो पूर्वजों की आत्माओं को संतुष्ट करने और पितृ दोष से संबंधित मुद्दों को हल करने के लिए किया जाता है। यह अनसुलझे पूर्वजों के कर्मों से उत्पन्न माना जाता है। इसका उद्देश्य शांति और आशीर्वाद लाना है।",
   },
   {
-    title:"Vedic Astrology",
+    titleEn:"Vedic Astrology",
+    titleHi:"वैदिक ज्योतिष",
     image:"https://adityakundali.com/wp-content/uploads/2024/11/VEDIC-ASTROLOGY.jpg",
-    description:"Vedic astrology, also known as Jyotish, is an ancient Indian system of astrology that uses the positions of celestial bodies at the time of a person's birth to provide insights into their personality, life events, and future.",
+    descriptionEn:"Vedic astrology, also known as Jyotish, is an ancient Indian system of astrology that uses the positions of celestial bodies at the time of a person's birth to provide insights into their personality, life events, and future.",
+    descriptionHi:"वैदिक ज्योतिष, जिसे ज्योतिष भी कहा जाता है, एक प्राचीन भारतीय ज्योतिष प्रणाली है जो किसी व्यक्ति के जन्म के समय आकाशीय पिंडों की स्थिति का उपयोग करके उनके व्यक्तित्व, जीवन की घटनाओं और भविष्य के बारे में अंतर्दृष्टि प्रदान करती है।",
 
   },
   {
-    title:"KalSarp Dosh Pooja",
+    titleEn:"KalSarp Dosh Pooja",
+    titleHi:"कालसर्प दोष पूजा",
     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4jlkrMLoQPQlR2JJ5s9-huiy_w_QFTaD1Og&s",
-    description:
+    descriptionEn:
     "KalSarp Dosh Pooja is a ritual performed to mitigate the effects of Kalsarp Dosh, a condition in Vedic astrology where all planets are positioned between Rahu and Ketu. It is believed to bring peace and prosperity.",
+    descriptionHi:
+    "कालसर्प दोष पूजा एक अनुष्ठान है जो कालसर्प दोष के प्रभावों को कम करने के लिए किया जाता है। यह एक स्थिति है जिसमें सभी ग्रह राहु और केतु के बीच स्थित होते हैं। इसे शांति और समृद्धि लाने वाला माना जाता है।",
 
   },
   {
-    title: "KUNDALI HASTREKHA",
+    titleEn: "KUNDALI HASTREKHA",
+    titleHi: "कुंडली हस्तरेखा",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7ASXKUSlzZCbGrz8fbs7udGaBN6a4j0SrA&s",
-    description:
+    descriptionEn:
       'Kundali" refers to a birth chart in Hindu astrology, while "Hastrekha" translates to palmistry. Hastrekha explores the lines and markings on the palm to offer predictions about various aspects of life.',
+    descriptionHi:
+      'कुंडली" का अर्थ हिंदू ज्योतिष में जन्म कुंडली है, जबकि "हस्तरेखा" का अनुवाद हस्तरेखा विज्ञान में किया जाता है। हस्तरेखा जीवन के विभिन्न पहलुओं के बारे में भविष्यवाणियाँ करने के लिए हथेली पर रेखाओं और चिह्नों का पता लगाती है।',
   },
   {
-    title: "VASTU TIPS",
+    titleEn: "VASTU TIPS",
+    titleHi: "वस्तु टिप्स",
     image: "https://varanasiastrologer.com/assets/img/ser5.jpg",
-    description:
+    descriptionEn:
       "Vastu tips focus on creating a harmonious living space by aligning with natural energies and cosmic forces, emphasizing proper room placement and positive energy. These tips aim to enhance well-being and prosperity.",
+    descriptionHi:
+      "वास्तु टिप्स प्राकृतिक ऊर्जा और ब्रह्मांडीय बलों के साथ संरेखण करके एक सामंजस्यपूर्ण रहने की जगह बनाने पर ध्यान केंद्रित करते हैं, उचित कमरे के स्थान और सकारात्मक ऊर्जा पर जोर देते हैं। ये टिप्स भलाई और समृद्धि को बढ़ाने का लक्ष्य रखते हैं।",
   },
   {
-    title: "LAL KITAB",
+    titleEn: "LAL KITAB",
+    titleHi: "लाल किताब",
     image: "/nayan_service_lalKitab.jpg",
-    description:
+    descriptionEn:
       "Lal Kitab is an ancient astrological text known for practical remedies and Totkes. It predicts fortune based on planetary positions, avoiding mantras and gemstones. It emphasizes simple, effective solutions for life challenges.",
+    descriptionHi:
+      "लाल किताब एक प्राचीन ज्योतिषीय ग्रंथ है जो व्यावहारिक उपचारों और टोटके के लिए जाना जाता है। यह ग्रहों की स्थिति के आधार पर भाग्य की भविष्यवाणी करता है, मंत्रों और रत्नों से बचता है। यह जीवन की चुनौतियों के लिए सरल, प्रभावी समाधानों पर जोर देता है।",
   },
   {
-    title: "SATYA NARAYAN KATHA",
+    titleEn: "SATYA NARAYAN KATHA",
+    titleHi: "सत्यनारायण कथा",
     image: "https://onlinepanditg.in/images/resource/s16.jpg",
-    description:
+    descriptionEn:
       "A Hindu ritual dedicated to Lord Vishnu in his form as Satyanarayan. The katha is recited to seek blessings for prosperity, peace, and happiness.",
+    descriptionHi:
+      "भगवान विष्णु के सत्यनारायण रूप को समर्पित एक हिंदू अनुष्ठान। कथा का पाठ समृद्धि, शांति और खुशी के लिए आशीर्वाद प्राप्त करने के लिए किया जाता है।",
   },
   {
-    title: "NAVGRAH POOJA",
+    titleEn: "NAVGRAH POOJA",
+    titleHi: "नवग्रह पूजा",
     image: "/nayan_service_NAVGRAH POOJA.jpg",
-    description:
+    descriptionEn:
       "Navgrah Pooja is a ritual to align spiritual and physical energies, invoking the nine planetary deities through chants and offerings for cosmic harmony.",
+    descriptionHi:
+      "नवग्रह पूजा एक अनुष्ठान है जो आध्यात्मिक और भौतिक ऊर्जा को संरेखित करने के लिए किया जाता है, नौ ग्रहों के देवताओं को मंत्रों और भेंटों के माध्यम से ब्रह्मांडीय सामंजस्य के लिए बुलाया जाता है।",
   },
   {
-    title: "GRAH PRAVESH",
+    titleEn: "GRAH PRAVESH",
+    titleHi: "गृह प्रवेश",
     image: "/nayan_service_GRAH PRAVESH.jpg",
-    description:
+    descriptionEn:
       "Griha Pravesh Pooja is a housewarming ritual done before entering a new home, meant to cleanse negativity and bring auspiciousness as per Hindu traditions.",
+    descriptionHi:
+      "गृह प्रवेश पूजा एक गृहप्रवेश अनुष्ठान है जो नए घर में प्रवेश करने से पहले किया जाता है, जिसका उद्देश्य नकारात्मकता को दूर करना और हिंदू परंपराओं के अनुसार शुभता लाना है।",
   },
 ];
 

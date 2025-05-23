@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const testimonials = [
   {
@@ -36,6 +37,7 @@ const testimonials = [
 const Testimonial = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const { t } = useTranslation();
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -69,12 +71,10 @@ const Testimonial = (props) => {
         <h1
           className={`text-3xl md:text-4xl ${props.textColor} font-semibold mb-4`}
         >
-          What People Say About Us
+          {t("testimonial.title")}
         </h1>
         <p className={`${props.pColor} text-md md:text-lg font-serif`}>
-          We believe astrology is a pure science, and our aim is to create a
-          social impact that blends science and astrology through tools like
-          kundali and astrology charts.
+          {t("testimonial.description")}
         </p>
       </div>
 

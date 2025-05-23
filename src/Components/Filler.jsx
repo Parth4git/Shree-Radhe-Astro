@@ -1,19 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-const Filler = (props) => {
+const Filler = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   return (
     <section className=" mx-auto px-6 bg-gray-800 py-12 items-center flex flex-col justify-center">
       {/* <h3 className="text-3xl font-bold text-center text-white mb-4">
         {props.title}
       </h3> */}
       <p className="text-amber-200 text-2xl font-serif mb-4 max-w-7xl">
-        हमारी ज्योतिष और पूजा सेवाएँ न केवल शहर में बल्कि शहर के बाहर भी प्रदान
-        की जाती हैं। यदि आप किसी विशेष समस्या, जीवन में उतार-चढ़ाव, या कोई भी
-        मानसिक एवं शारीरिक कष्ट महसूस कर रहे हैं, तो हमआपकी सेवा में उपलब्ध है।
-        हम दूरस्थ स्थानों पर भी अपनी पूजा, यज्ञ, और ज्योतिषीय परामर्श के माध्यम
-        से आपको समाधान देने के लिए तैयार हैं।
+        {t("filler.description")}
       </p>
 
       <button
@@ -23,7 +21,7 @@ const Filler = (props) => {
         }}
       >
         <span className="text-2xl">📞 </span>
-        Get a Consultation on Call Now
+        {t("choose.button")}
       </button>
     </section>
   );

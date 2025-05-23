@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom"; // 👈 Add this import
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -24,30 +26,37 @@ const Header = () => {
             className="h-14 w-16 border-rounded"
           />
           <div className="block">
-            <h1 className="text-xl font-bold text-gray-50">Astrologer</h1>
-            <p className="text-lg font-bold text-gray-50">Nayan Joshi</p>
+            <h1 className="text-xl font-bold text-gray-50">
+              {t("header.title")}
+            </h1>
+            <p className="text-lg font-bold text-gray-50">{t("header.name")}</p>
           </div>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8 pr-32 text-gray-50 font-serif text-lg">
+        <nav className="hidden md:flex space-x-8 pr-36 text-gray-50 font-serif text-lg">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.href}
               className="hover:text-yellow-300"
             >
-              {link.name}
+              {t(`header.${link.name.toLowerCase()}`)}
             </Link>
           ))}
         </nav>
+
+        <div className="block md:flex space-x-2 text-white">
+          <button onClick={() => i18n.changeLanguage("en")}>EN</button>
+          <button onClick={() => i18n.changeLanguage("hi")}>हिं</button>
+        </div>
 
         {/* Contact Button */}
         <a
           href="tel:+919727689606"
           className="hidden md:block bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded"
         >
-          Call Us
+          {t("header.callUs")}
         </a>
 
         {/* Mobile Menu Icon */}
@@ -65,15 +74,16 @@ const Header = () => {
         direction="left"
       >
         <p>
-          Welcome to the world of astrology! Discover your future with
-          personalized readings and insights. Call us at +91 9727689606 for
-          expert guidance.
+          {t("header.marquee")}
+          <span className="text-amber-400 font-bold">
+            {t("header.marqueeHighlight")}
+          </span>
         </p>
       </marquee>
 
       {/* Mobile Nav Dropdown */}
       {isOpen && (
-        <nav className="md:hidden bg-purple-600 px-4 pb-4 space-y-2 text-gray-50 font-medium">
+        <nav className="md:hidden bg-gray-900 px-4 pb-4 space-y-2 text-gray-50 font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -81,7 +91,7 @@ const Header = () => {
               className="block hover:text-cyan-50"
               onClick={() => setIsOpen(false)}
             >
-              {link.name}
+              {t(`header.${link.name.toLowerCase()}`)}
             </Link>
           ))}
         </nav>

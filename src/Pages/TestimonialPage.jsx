@@ -8,9 +8,9 @@ const TestimonialPage = () => {
   return (
     <div>
       <Header />
-      <Counter bgColor={"bg-gray-50"} textColor={"text-gray-800"} />
+      <Counter bgColor={"bg-gray-100"} textColor={"text-gray-800"} />
       <Testimonial
-        bgColor={"bg-gray-50"}
+        bgColor={"bg-gray-100"}
         textColor={"text-gray-800"}
         pColor={"text-gray-600"}
       />

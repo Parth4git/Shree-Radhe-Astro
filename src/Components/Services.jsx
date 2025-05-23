@@ -1,38 +1,49 @@
 import React from "react";
 import serviceData from "../assets/data";
 import { FaArrowRight } from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Services = (props) => {
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
+
   return (
     <div className="max-w-8xl mx-auto px-6 py-12 bg-gray-100">
-      <h1 className="text-5xl font-semibold mb-4 text-center">Our Services</h1>
+      <h1 className="text-5xl font-semibold mb-4 text-center">
+        {t("services.title")}
+      </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-        {serviceData.slice(`${props.value}`).map((service, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-md shadow-amber-300 rounded-lg p-4"
-          >
-            <img
-              src={service.image}
-              alt={service.title}
-              className="rounded-2xl shadow-lg object-cover w-full h-52 mb-4"
-            />
-            <h2 className="text-xl font-bold mb-2">{service.title}</h2>
-            <p className="text-gray-700 mb-8">{service.description}</p>
-            <button
-              className="asolute bottom-4 right-4 bg-amber-400 hover:bg-amber-500 text-white font-bold py-2 px-4 rounded"
-              onClick={() => {
-                navigate("/contact");
-              }}
+        {serviceData.slice(0, props.value).map((service, index) => {
+          const title = lang === "hi" ? service.titleHi : service.titleEn;
+          const description =
+            lang === "hi" ? service.descriptionHi : service.descriptionEn;
+
+          return (
+            <div
+              key={index}
+              className="bg-white shadow-md shadow-amber-300 rounded-lg p-4"
             >
-              Book a Consultation
-            </button>
-          </div>
-        ))}
+              <img
+                src={service.image}
+                alt={title}
+                className="rounded-2xl shadow-lg object-cover w-full h-52 mb-4"
+              />
+              <h2 className="text-xl font-bold mb-2">{title}</h2>
+              <p className="text-gray-700 mb-8">{description}</p>
+              <button
+                className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded"
+                onClick={() => {
+                  navigate("/services");
+                }}
+              >
+                {t("services.button")}
+              </button>
+            </div>
+          );
+        })}
       </div>
 
       {props.show && (
@@ -41,9 +52,9 @@ const Services = (props) => {
             to="/services"
             className="text-gray-700 text-2xl font-bold hover:underline"
           >
-            See All Services
+            {t("services.viewAll")}
           </Link>
-          <FaArrowRight size={24} className="text-gray-800 " />
+          <FaArrowRight size={24} className="text-gray-800" />
         </div>
       )}
     </div>

@@ -1,0 +1,71 @@
+{
+    "header": {
+      "title": "Astrologer",
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "testimonials": "Testimonials",
+      "contact us": "Contact Us",
+      "callUs": "Call Us",
+      "astrologer": "Astrologer",
+      "name": "Nayan Joshi",
+      "marquee": "Welcome to the world of astrology! Discover your future...",
+      "marqueeHighlight":"We are here to help you with your future decisions."
+    },
+    "hero":{
+      "button1":"Get Started",
+      "button2":"Learn More"
+    },
+    "aboutus": {
+      "title": "About Dr. Nayan Joshi",
+      "description1": "We believe astrology is pure science, and we aim to create such a social impact of the organization on you that science and astrology through its resources of the astrology chart, kundali, etc. As we dive into our 50th year, we strive to build a community where we are a part of your daily routine right from our astrology by date of birth, name, time, palm reading, and face reading, to all other online astrology, numerology, palmistry services.",
+      "description2": "He is helping people to solve their life problems related to government jobs, health, marriage, love, career, and business. As we dive into our 20th year, we strive to build a community where we are a part of your daily routine right from our astrology by date of birth, name, time, palm reading, and face reading, to all other online astrology, numerology, palmistry services.",
+      "button":" Get a Consultation on Call Now"
+    },
+    "choose":{
+      "title": "Why Choose Us?",
+      "description1": "We believe astrology is pure science, and we aim to create such a social impact of the organization on you that science and astrology through its resources of the astrology chart, kundali, etc. As we dive into our 50th year, we strive to build a community where we are a part of your daily routine right from our astrology by date of birth, name, time, palm reading, and face reading, to all other online astrology, numerology, palmistry services.",
+      "description2": "He is helping people to solve their life problems related to government jobs, health, marriage, love, career, and business. As we dive into our 20th year, we strive to build a community where we are a part of your daily routine right from our astrology by date of birth, name, time, palm reading, and face reading, to all other online astrology, numerology, palmistry services.",
+      "button":"Get a Consultation on Call Now"
+    },
+    "counter":{
+      "title": "Our Success Stories"
+      },
+    "testimonial": {
+      "title": "What People Say About Us",
+      "description": "We believe astrology is a pure science, and our aim is to create a social impact that blends science and astrology through tools like kundali and astrology charts."
+    },
+    "filler":{
+      "description": "Our astrology and puja services are provided not only in the city but also outside the city. If you are facing any specific problem, ups and downs in life, or any mental and physical distress, we are available to serve you. We are ready to provide solutions through our puja, yagna, and astrological consultations even at remote locations."
+    },
+    "gallery":{
+      "title":"Gallery"
+    },
+    "contact":{
+     "title":"Contact Us",
+     "sub1":"24 X 7 Support",
+     "sub2":"Online Booking",
+     "sub1text":"  We provide 24*7 real-time support for our customers."  ,
+     "sub2text":"   You can book all types of puja services online.",
+     "call":"Call Us",
+     "whatsapp":"WhatsApp Us to Book Now"
+    },
+    "footer": {
+      "followUs": "Follow Us",
+      "query":" We are happy to help you and solve your queries.",
+      "link":"Quick Links",
+      "home":"Home",
+      "about":"About",
+      "services":"Our Services",
+      "contact":"Contact Us",
+      "touch":"Get in Touch",
+      "address":"Viramgam ,Ahmedabad, Gujarat, 382150,",
+      "rights": "Copyright © 2025 Shree Radhe Astro. All Rights Reserved. Powered by Quartz Technologies."
+    },
+    "services": {
+      "title": "Our Services",
+      "button": "Book a Consultation Now",
+      "viewAll": "View All Services"
+    }
+  }
+  

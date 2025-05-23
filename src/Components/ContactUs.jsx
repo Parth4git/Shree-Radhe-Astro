@@ -1,12 +1,14 @@
 import React from "react";
 import { FaCheckCircle, FaWhatsapp } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 const ContactUs = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-gray-50 py-16 px-4">
       <h2 className="text-3xl md:text-5xl font-semibold text-gray-800 mb-10 text-center">
-        Contact Us
+        {t("contact.title")}
       </h2>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
@@ -29,19 +31,23 @@ const ContactUs = () => {
             <div>
               <div className="flex items-center gap-2">
                 <FaCheckCircle className="text-amber-400 text-xl" />
-                <p className="text-xl md:text-2xl font-bold">24 X 7 Support</p>
+                <p className="text-xl md:text-2xl font-bold">
+                  {t("contact.sub1")}
+                </p>
               </div>
               <p className="text-base md:text-lg font-serif text-gray-700">
-                We provide 24*7 real-time support for our customers.
+                {t("contact.sub1text")}
               </p>
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <FaCheckCircle className="text-amber-400 text-xl" />
-                <p className="text-xl md:text-2xl font-bold">Online Booking</p>
+                <p className="text-xl md:text-2xl font-bold">
+                  {t("contact.sub2")}
+                </p>
               </div>
               <p className="text-base md:text-lg font-serif text-gray-700">
-                You can book all types of puja services online.
+                {t("contact.sub2text")}
               </p>
             </div>
           </div>
@@ -55,7 +61,7 @@ const ContactUs = () => {
               }}
             >
               <FiPhoneCall className="text-amber-400" />
-              Call Us for Free Consultation
+              {t("contact.call")}
             </button>
 
             <button
@@ -68,7 +74,7 @@ const ContactUs = () => {
               }}
             >
               <FaWhatsapp className="text-amber-400" />
-              WhatsApp us to Book
+              {t("contact.whatsapp")}
             </button>
           </div>
         </div>
@@ -87,6 +93,8 @@ const ContactUs = () => {
                 type="text"
                 id="name"
                 className="w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-2 focus:ring-amber-400"
+                required
+                placeholder="Enter your name"
               />
             </div>
             <div>
@@ -100,6 +108,13 @@ const ContactUs = () => {
                 type="email"
                 id="email"
                 className="w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-2 focus:ring-amber-400"
+                required
+                placeholder="Enter your email address"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please enter a valid email address"
+                autoComplete="email"
+                autoCorrect="off"
+                autoCapitalize="off"
               />
             </div>
             <div>
@@ -113,6 +128,18 @@ const ContactUs = () => {
                 type="tel"
                 id="phone"
                 className="w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-2 focus:ring-amber-400"
+                required
+                pattern="[0-9]{10}"
+                title="Please enter a valid 10-digit phone number"
+                autoComplete="tel"
+                autoCorrect="off"
+                autoCapitalize="off"
+                maxLength={10}
+                minLength={10}
+                placeholder="XXXXX XXXXX"
+                onInput={(e) => {
+                  e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                }}
               />
             </div>
             <div>
@@ -126,6 +153,8 @@ const ContactUs = () => {
                 id="message"
                 rows={4}
                 className="w-full border border-gray-300 rounded py-2 px-3 resize-none focus:outline-none focus:ring-2 focus:ring-amber-400"
+                required
+                placeholder="Enter your message"
               ></textarea>
             </div>
             <button

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const counters = [
   { value: 2000, label: "Kundli Served" },
@@ -56,6 +57,7 @@ const Count = ({ value, label, suffix = "", textColor, labelColor }) => {
 };
 
 const Counter = (props) => {
+  const { t } = useTranslation();
   return (
     <section
       className={` ${props.bgColor} py-10 items-center flex flex-col justify-center `}
@@ -63,7 +65,7 @@ const Counter = (props) => {
       <h2
         className={`text-5xl font-semibold ${props.textColor} text-center mb-12`}
       >
-        Our Success Stories
+        {t("counter.title")}
       </h2>
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
         {counters.map((item, idx) => (
