@@ -34,7 +34,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8 pr-36 text-gray-50 font-serif text-lg">
+        <nav className="hidden md:flex space-x-8  text-gray-50 font-serif text-lg">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -75,7 +75,7 @@ const Header = () => {
       >
         <p>
           {t("header.marquee")}
-          <span className="text-amber-400 font-bold">
+          <span className="text-amber-200 font-bold">
             {t("header.marqueeHighlight")}
           </span>
         </p>
