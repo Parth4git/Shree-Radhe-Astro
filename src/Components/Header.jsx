@@ -49,6 +49,7 @@ const Header = () => {
         <div className="block md:flex space-x-2 text-white">
           <button onClick={() => i18n.changeLanguage("en")}>EN</button>
           <button onClick={() => i18n.changeLanguage("hi")}>हिंदी</button>
+          <button onClick={() => i18n.changeLanguage("gu")}>ગુજરાતી</button>
         </div>
 
         {/* Contact Button */}

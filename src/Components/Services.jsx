@@ -17,9 +17,16 @@ const Services = (props) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
         {serviceData.slice(0, props.value).map((service, index) => {
-          const title = lang === "hi" ? service.titleHi : service.titleEn;
-          const description =
-            lang === "hi" ? service.descriptionHi : service.descriptionEn;
+          let title = service.titleEn;
+          let description = service.descriptionEn;
+
+          if (lang === "hi") {
+            title = service.titleHi;
+            description = service.descriptionHi;
+          } else if (lang === "gu") {
+            title = service.titleGu;
+            description = service.descriptionGu;
+          }
 
           return (
             <div
