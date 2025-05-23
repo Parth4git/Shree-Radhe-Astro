@@ -46,10 +46,17 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="block md:flex space-x-2 text-white">
-          <button onClick={() => i18n.changeLanguage("en")}>EN</button>
-          <button onClick={() => i18n.changeLanguage("hi")}>हिंदी</button>
-          <button onClick={() => i18n.changeLanguage("gu")}>ગુજરાતી</button>
+        <div className="block md:flex space-x-2 text-white bg-gray-900 p-2">
+          {/* Language Switcher */}
+          <select
+            className="bg-gray-900 text-white"
+            value={i18n.language}
+            onChange={(e) => i18n.changeLanguage(e.target.value)}
+          >
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="gu">ગુજરાતી</option>
+          </select>
         </div>
 
         {/* Contact Button */}
