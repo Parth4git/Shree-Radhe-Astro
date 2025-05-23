@@ -2,9 +2,37 @@ import React from "react";
 import { FaCheckCircle, FaWhatsapp } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
+import { a } from "framer-motion/client";
 
 const ContactUs = () => {
   const { t } = useTranslation();
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "aa090cdc-2732-4c8f-a4da-faee750b55ab");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      alert("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <section className="bg-gray-50 py-16 px-4">
       <h2 className="text-3xl md:text-5xl font-semibold text-gray-800 mb-10 text-center">
@@ -22,7 +50,7 @@ const ContactUs = () => {
               autoplay
               loop
               muted
-              src="/video.mp4" // Replace with your video path
+              src="/video.mp4"
             />
           </div>
 
@@ -81,7 +109,10 @@ const ContactUs = () => {
 
         {/* Right Column: Form */}
         <div>
-          <form className="bg-white shadow-md shadow-amber-300 rounded-lg p-6 space-y-14">
+          <form
+            className="bg-white shadow-md shadow-amber-300 rounded-lg p-6 space-y-14"
+            onSubmit={onSubmit}
+          >
             <div>
               <label
                 htmlFor="name"
